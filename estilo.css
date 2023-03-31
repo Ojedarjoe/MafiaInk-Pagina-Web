@@ -1,0 +1,97 @@
+/* Reset de estilos */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+	background-color: #1b1b1b;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header {
+	background-color: #111;
+	padding: 20px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #c1c1c1;
+}
+
+main {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+table {
+	width: 100%;
+    border-collapse: collapse; 
+	margin-bottom: 50px;
+    padding: 40px;
+	text-align: center;
+
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #444;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #444;
+}
+
+tr:hover {
+	background-color: #666;
+}
+
+.add-event-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.add-event-button {
+	padding: 10px;
+	background-color: #
+}
+
+img {
+	width:200px ;
+	height:200px;
+  justify-content: center;
+  margin: auto 0;
+}
