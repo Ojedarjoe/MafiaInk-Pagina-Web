@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>Inicio de sesión </title>
+
+  </head>
+  <body>
+   
+    <link rel="stylesheet" href="SesionStyle.css">
+    <!-- <h1>Formulario de inicio de sesión y registro</h1> -->
+
+    <img src="imagenes/mafiaInkLogo.png" class="LogoMafia" alt="mafiaInkLogo"> 
+    
+    <form>
+        <h2>Iniciar sesión</h2>
+        <label for="email"><b>Correo electrónico</b></label>
+        <input type="email" placeholder="Ingresa tu correo electrónico" name="email" >
+
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingresa tu contraseña" name="psw" >
+
+        <button type="submit">Iniciar sesión</button>
+      
+        
+         <h2>Registrarse</h2>
+         
+
+        <button id="btnAbrirRegistro">Registrarse</button>
+
+        <dialog id ="modal" class="Modal">
+
+            <label for="email_reg"><b>Correo electrónico</b></label>
+            <input type="email" placeholder="Ingresa tu correo electrónico" name="email_reg" >
+
+            <label for="psw_reg"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingresa tu contraseña" name="psw_reg" >
+
+            <label for="psw_repeat"><b>Repetir contraseña</b></label>
+            <input type="password" placeholder="Repite tu contraseña" name="psw_repeat">
+
+          <button id="Registro" class="buttonModalRegistro">Registrarse</button>
+          <span class="close">&times;</span>
+          
+
+        </dialog>
+
+    </form>
+    <script src="sesion.js"></script>
+    
+
+  </body>
+
+</html>

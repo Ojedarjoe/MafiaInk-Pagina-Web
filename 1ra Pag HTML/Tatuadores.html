@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title >Tatuadores</title>
+</head>
+
+<body>
+    <header>
+		<nav>
+			<ul>
+				<li><a href="3%20TablaCitas.html#">Citas</a></li>
+				<li><a href="#">Articulos en Venta</a></li>
+			</ul>
+		</nav>
+	</header>
+    <link rel="stylesheet" href="estilo.css">
+
+	<main>
+		<div class="img-container">
+			<a href="file:///C:/Users/dell/Desktop/1ra%20Pag%20HTML/DescripTatuador1.html"><img class="imgbutton" src="imagenes/tatuador1.jpg" alt="Imagen 1"></a>
+			<a href="file:///C:/Users/dell/Desktop/1ra%20Pag%20HTML/DescripTatuador2.html"><img class="imgbutton" src="imagenes/tatuador2.jpg" alt="Imagen 2"></a>
+			<a href="#"><img class="imgbutton" src="imagenes/tatuador3.jpg" alt="Imagen 3"></a>
+		</div>
+		<div class="add-event-container">
+			<button class="add-event-button" onclick="agregarImagen()">Agregar Imagen</button>
+		</div>
+	</main>
+
+	<script>
+			function agregarImagen() {
+			var imageUrl = prompt("Ingrese la URL de la imagen:");
+			if (imageUrl) {
+				var imageContainer = document.getElementById("image-container");
+				var imageLink = document.createElement("a");
+				var image = document.createElement("img");
+				imageLink.href = "#";
+				image.className = "imgbutton";
+				image.src = imageUrl;
+				image.alt = "Imagen";
+				imageLink.appendChild(image);
+				imageContainer.appendChild(imageLink);
+			}
+		}
+		}
+	</script>
+</body>
+
+</html>

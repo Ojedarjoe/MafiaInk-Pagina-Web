@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda - Estudio de Tatuajes</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Trabajos</a></li>
+				<li><a href="file:///C:/Users/dell/Desktop/1ra%20Pag%20HTML/Tatuadores.html#">Tatuadores</a></li>
+				<li><a href="#">Articulos en Venta</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Citas</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Fecha</th>
+					<th>Hora</th>
+					<th>Cliente</th>
+					<th>Tatuador</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>23/03/2023</td>
+					<td>14:00</td>
+					<td>Joe Ojeda</td>
+					<td>SPOD</td>
+				</tr>
+				<tr>
+					<td>24/03/2023</td>
+					<td>16:00</td>
+					<td>Aaron Garcia</td>
+					<td>Dylan</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="add-event-cotainer">
+			<button id="BotonCita" class="boton cita">Agregar Cita</button>
+		</div>
+	</main>
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<form id="citaForm">
+				<label for="fecha">Fecha:</label>
+				<input type="text" id="fecha" name="fecha" placeholder="DD/MM/AAAA" pattern="\d{2}/\d{2}/\d{4}" required>
+				<br>
+				<label for="hora">Hora:</label>
+				<input type="text" id="hora" name="hora" placeholder="HH:MM" pattern="\d{2}:\d{2}" required>
+				<br>
+				<label for="cliente">Cliente:</label>
+				<input type="text" id="cliente" name="cliente" required>
+				<br>
+				<label for="tatuador">Tatuador:</label>
+				<select id="tatuador" name="tatuador" required>
+					<option value="">Seleccionar tatuador</option>
+					<option value="SPOD">SPOD</option>
+					<option value="Dylan">Dylan</option>
+					<option value="Tony">Tony</option>
+					<option value="Otro">Otro</option>
+				</select>
+				<br>
+				<input type="submit" value="Agregar">
+			</form>
+		</div>
+	</div>
+	<script src="tablas.js"></script>
+</body>
+</html>
